@@ -115,8 +115,8 @@ def scalar_to_interval(x, rad):
 
 
 scalar_to_interval_vec = np.vectorize(scalar_to_interval)
-x_data = read_bin_file_with_numpy('-0.205_lvl_side_a_fast_data.bin')
-y_data = read_bin_file_with_numpy('0.225_lvl_side_a_fast_data.bin')
+x_data = read_bin_file_with_numpy('x_data.bin')
+y_data = read_bin_file_with_numpy('y_data.bin')
 x_voltage = convert_to_voltage(x_data)
 y_voltage = convert_to_voltage(y_data)
 rad = 2 ** -14
